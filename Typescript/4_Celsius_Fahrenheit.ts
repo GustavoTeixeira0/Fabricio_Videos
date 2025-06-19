@@ -13,7 +13,7 @@ rl.question("Digite a temperatura em graus Celsius: ", (input) => {
     const celsius = parseFloat(input);
 
     if(isNaN(celsius)){
-        console.log("Por favor, digite um número válido.");
+        console.log("Por favor, digite um número válido: ");
     } else {
         const fahrenheit = calcularTemperatura(celsius);
         console.log(`${celsius} graus Celsius é igual a ${fahrenheit.toFixed(2)} graus Fahrenheit.`);
